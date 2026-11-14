@@ -71,7 +71,6 @@ PS：该工具无法避开校园网清查，校园网是根据IP所产生的流�
 - **PyInstaller** `--onefile --windowed` 打包为独立 exe，脱离 Python/PowerShell 环境，双击即用；
 - **frozen 环境适配**：自启动路径、配置读写均兼容打包后的运行形态；
 - **干净退出**：统一 `_do_exit()` 流程（停止引擎 → 隐藏托盘 → 关窗 → `QApplication.quit()`），配合 `--smoke` 冒烟测试验证无进程残留；
-- 启动器 `启动 Wi-Fi Guard.bat`：优先运行 dist 下 exe，回退 `pythonw WifiGrand.py`。
 
 ## 四、典型使用流程
 
